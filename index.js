@@ -6,7 +6,7 @@ function takeANumber(currentLine, newPersonName){
 
 function nowServing(currentLine){
   if(currentLine.length > 1){
-    return currentline.shift();
+    return "Currently serving " + currentline.shift();
   }
   else{
     return "There is nobody waiting to be served!"  
