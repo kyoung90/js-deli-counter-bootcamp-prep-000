@@ -18,10 +18,10 @@ function currentLine(currentLine){
   if(currentLine.length > 0){
     for(var i = 0; i < currentLine.length; i++){
       if(i !== currentLine.length-1){
-        line += i + ". " + currentLine[i] + ", ";
+        line += i+1 + ". " + currentLine[i] + ", ";
       }
       else{
-        line += i + ". " + currentLine[i];
+        line += i+1 + ". " + currentLine[i];
       }
     }
   }
