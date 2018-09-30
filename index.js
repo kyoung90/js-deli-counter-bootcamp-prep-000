@@ -16,14 +16,19 @@ function nowServing(currentLine){
 function currentLine(currentLine){
   var line = "";
   if(currentLine.length > 0){
-    
-  }
-  for(var i = 0; i < currentLine.length; i++){
-    if(i !== currentLine.length-1){
-      line += i + ". " + currentLine[i] + ", ";
+    for(var i = 0; i < currentLine.length; i++){
+      if(i !== currentLine.length-1){
+        line += i + ". " + currentLine[i] + ", ";
+      }
+      else{
+        line += i + ". " + currentLine[i];
+      }
     }
-    else{
-      line += i + ". " + currentLine[i];
-    }
   }
+  else{
+    return "The line is currently empty";
+  }
+  
+  return line;
+  
 }
