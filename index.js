@@ -12,3 +12,18 @@ function nowServing(currentLine){
     return "There is nobody waiting to be served!"  
   }
 }
+
+function currentLine(currentLine){
+  var line = "";
+  if(currentLine.length > 0){
+    
+  }
+  for(var i = 0; i < currentLine.length; i++){
+    if(i !== currentLine.length-1){
+      line += i + ". " + currentLine[i] + ", ";
+    }
+    else{
+      line += i + ". " + currentLine[i];
+    }
+  }
+}
